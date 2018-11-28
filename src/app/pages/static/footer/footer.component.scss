@@ -1,0 +1,14 @@
+.footer {
+	.footer__Primary{
+		border-top: 5px solid #eee;
+	}
+	.footer__Secondary {
+		border-top: 1px solid #eee;
+		border-bottom: 30px solid #eee;
+		.header {
+			h2 {
+				color: #97AED6;
+			}
+		}
+	}
+}

@@ -1,0 +1,230 @@
+.is__Section {
+	height: 450px;
+	background:#111c45;
+	.is__Section--Box {
+		background-image: url('/assets/img/student.png');
+		background-repeat: no-repeat;
+		background-size: 460px;
+		background-position: right;
+		height: 450px;
+		.container__Text {
+			width: 40%;
+			.box__Header {
+				.title {
+					font-weight: 800;
+					color: #98ACD2;
+				}
+				.description {
+					color: #a8a8a8;
+					font-size: 15px;
+				}
+				.link {
+					display: block;
+					margin-top: 35px;
+					background: #31487f;
+					color: white;
+					padding: 10px 30px;
+					border-radius: 20px;
+					width: 40%;
+					text-align: center;
+				}
+			}
+		}
+
+	}
+	
+}
+
+.is__Main {
+
+	.is__Main--Primary{
+
+		.primary__Header {
+			line-height: 70px;
+			border-top: 1px solid #D5DEEB;
+			border-bottom: 1px solid #D5DEEB;
+			.ul .list .link {
+				padding: 1.6em;
+				color: #B1C9E3;
+
+			}
+
+		}
+
+		.primary__Show{
+			background: #D5DEEB;
+			.container__Article {
+				.article {
+					background: white;
+					width: 30%;
+					border-radius: 10px;
+					border: 1px solid #eee;
+					&:hover {
+						box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+					}
+
+					.figure {
+						text-align: center;
+					}
+
+					.this__Options{
+						.this__Header {
+							.title {
+								font-size: 17px;
+								font-weight: 800;
+							}
+						}
+						.this__Description {
+							.description {
+								color: #a0a0a0;
+								font-size: 13px;
+								line-height: 16px;
+							}
+						}
+					}
+
+					.this__Actions{
+						background: #eee;
+						border-top: 1px solid #dedede;
+						.price{
+							font-size: 22px;
+						}
+					}
+
+				}
+			}
+		}
+
+
+	}
+
+	.is__Main--Secondary {
+		
+		.secondary__Header {
+			.title {
+				font-size:19px;
+				color:#98ACD2;
+				position: relative;
+				&:before {
+					content: '';
+					display: block;
+					width: 120px;
+					height: 4px;
+					background: #9aacd6;
+					border-radius: 20px;
+					position: absolute;
+					bottom: -1em;
+					left: 44.8%;
+
+				}
+			}
+		}
+
+		.seondary__Services {
+			.Services {
+				text-align: center;
+				width: 18%;
+				.figure{
+					margin:0 auto;
+					padding:0;
+				}
+				.Services__Header {
+					.title {
+						margin: 0;
+						font-size: 16px;
+						color:#31487f;
+					}
+				}
+				.Services__Description {
+					.description {
+						margin: 0;
+						line-height: 16px;
+					}
+				}
+			}
+		}
+
+	}
+
+	.is__Main--Tree{
+		border-top: 1px solid #eee;
+		.secondary__Header {
+			.title {
+				font-size:19px;
+				color:#98ACD2;
+				position: relative;
+				&:before {
+					content: '';
+					display: block;
+					width: 120px;
+					height: 4px;
+					background: #9aacd6;
+					border-radius: 20px;
+					position: absolute;
+					bottom: -1em;
+					left: 0%;
+
+				}
+			}
+		}
+		.secondary__Testimonios {
+			.article__Testimonios {
+				width: 30%;
+				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+				.article__Testimonios--Header {
+					.names {
+						.title {
+							font-size: 18px;
+							color: #7E98CA;
+						}
+						.details {
+							font-size: 13px;
+							color: #7E98CA;
+						}
+					}
+				}
+
+				.article__Testimonios--Details {
+					.details {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+
+	.is__Main--Four{
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		.is__Aside{
+			background-color: red;
+			background-image: url("https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/three-university-students.jpg?itok=3Qg-nC7-");
+			background-size: cover;
+			background-position: center;
+			width:50%;
+			height: 460px;
+		}
+
+		.header__Section{
+			.title{
+				font-size:19px;
+				color:#98ACD2;
+			}
+		}
+		.description__Section {
+			.article__News {
+				padding: 1em;
+				border-radius: 2px;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+				.description {
+					font-size: 16px;
+
+				}
+			}
+		}
+	}
+
+
+}

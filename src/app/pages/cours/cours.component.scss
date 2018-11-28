@@ -1,0 +1,115 @@
+.active {
+	.link {
+		color: #445c85!important;
+	}
+	.link:before {
+		opacity: 1!important;
+	}
+}
+
+.menu__Dashboard {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 18%;
+	background-color: #eff4f8;
+	box-shadow: inset -33px 0px 38px -21px #8989891c;
+	padding: 1em;
+	.menu__Dashboard--Nav {
+		.list {
+			display: block;
+			margin-bottom: 20px;
+			.link {
+				i {
+					margin-right: 5px;
+				}
+				text-decoration: none;
+				color: #97AED6;
+				padding: 10px;
+				display: flex;
+				align-items: center;
+				position: relative;
+				&:before {
+					content: '';
+					position: absolute;
+					width: 5px;
+					height: 100%;
+					background: #445c85;
+					right: -1em;
+					opacity: 0;
+				}
+			}
+			.link:hover {
+				color: #445c85;
+				i {
+					color: #445c85;
+				}
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.main__Dashboard {
+	background-color: #F8F9F9;
+	height: 100vh;
+	margin-left: 14.4em;
+	.main__Dashboard--Primary {
+		.main__Primary--Header {
+			.title {
+				font-size: 20px;
+				padding-bottom: 5px;
+			}
+		}
+	}
+
+	.main__Dashboard--Secondary {
+		.secondary__Post {
+			width: 65%;
+			.post {
+				background: white;
+				border: 1px solid #eee;
+				border-radius: 3px;
+				position: relative;
+				width: 45%;
+				.header__Post {
+					.title {
+						font-size: 17px;
+					}
+				}
+				.header__Image {
+					background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbloFna7PzUFeIQYslit7Ubh5gRYw7RD2DjNyahkwNfJs9U1_');
+					background-size:cover;
+					background-position:center;
+					height: 150px;
+				}
+			}
+		}
+
+		.secondary__Great {
+			width: 28%;
+			.great {
+				background-color: #111c45;
+				background-image: url('/assets/img/cup.png');
+				background-repeat: no-repeat;
+				background-size: 130px;
+				background-position: bottom;
+				height: 350px;
+				border-radius: 8px;
+				.great__Continue .link {
+					background: white;
+					color: #111c45;
+					padding: 4px 10px;
+					&:hover {
+						text-decoration: none;
+						background: transparent;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}

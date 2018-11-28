@@ -1,0 +1,101 @@
+<!-- Is header static to front page -->
+<header-front-static ></header-front-static>
+<!-- Is header static to front page -->
+
+<main class="is__Main">
+	
+	<section class="register__Top pt-5 pb-5">
+		<div class="container">
+			<header class="register__Top--Header">
+				<h2 class="title m-0 text-center text-dark">
+					Bienvenido a Student
+				</h2>
+				<p class="description m-0 text-center small text-muted">Somos una plataforma educativa que capacita a jovenes y profesionales con distintos cursos</p>
+			</header>
+
+		</div>
+	</section>
+
+	<section class="register__Main pt-5 pb-5 mb-5">
+		<header class="register__Main--Header text-center pb-5">
+			<h3 class="title m-0">¿Ya tienes una cuenta? ingresa:</h3>
+		</header>
+		<div class="container">
+			<section class="register__Main--Container col-9 m-auto d-flex justify-content-between p-5">
+
+				<article class="article__Register--Social">
+					<header class="register__Social--Header">
+						<h4 class="title text-center">
+							Con tus redes sociales
+						</h4>
+					</header>
+					<div class="register__Social--Img text-center">
+						<img src="/assets/img/star.png" alt="" width="150px">
+					</div>
+					<ul class="register__Social--Link p-0 m-0 mt-4">
+						<li class="list d-block">
+							<a href="#" class="link d-block facebook">
+								Registrate con facebook
+							</a>
+						</li>
+						<li class="list d-block">
+							<a href="#" class="link d-block twitter">
+								Registrate con twitter
+							</a>
+						</li>
+						<li class="list d-block mt-4">
+							<small class="small text-muted">
+								Nunca vamos a publicar algo sin tu permiso. Valoramos tu privacidad tanto como si fuera la nuestra.
+							</small>
+						</li>
+					</ul>
+				</article>
+
+				<form action="" class="form__Register--Step">
+					<header class="form__Register--Header">
+						<h4 class="title">Con tu Email</h4>
+					</header>
+					<div class="form__Fieldset d-flex justify-content-between mb-3">
+						<div class="two">
+							<label for="" class="text-muted">Nombre de usuario</label>
+							<input type="text" name="_username">
+						</div>
+						<div class="two">
+							<label for="" class="text-muted">Nombre y Apellido</label>
+							<input type="text" name="_fullname">
+						</div>
+					</div>
+					<div class="form__Fieldset mb-3">
+						<label for="" class="text-muted">Correo electrónico</label>
+						<input type="email" name="email">
+					</div>
+					<div class="form__Fieldset d-flex justify-content-between mb-3">
+						<div class="two">
+							<label for="" class="text-muted">Contraseña</label>
+							<input type="password" name="_password1">
+						</div>
+						<div class="two">
+							<label for="" class="text-muted">Confirmar contraseña</label>
+							<input type="password" name="_password2">
+						</div>
+					</div>
+					<div class="form__Fieldset d-flex justify-content-between align-items-center">
+						<input type="submit" value="Registrarse">
+						<p class="d-inline">
+							¿Ya tienes cuenta? <a [routerLink]="'/login'" class="link">
+								Inicia Sesión
+							</a>
+						</p>
+					</div>
+				</form>
+				
+			</section>
+		</div>
+	</section>
+
+</main>
+
+
+<!-- Is footer static to front page -->
+<footer-front-static></footer-front-static>
+<!-- Is footer static to front page -->

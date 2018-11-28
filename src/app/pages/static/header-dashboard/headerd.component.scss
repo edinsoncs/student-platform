@@ -1,0 +1,32 @@
+
+.header__Dashboard {
+	margin-left: 14em;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: white;
+	.header__Dashboard--Container {
+		.header__Dashboard--Form {
+			width: 30%;
+			input[type='search'] {
+				background: #eef3f6;
+				border: none;
+				border: 1px solid #eee;
+				padding: 10px 15px;
+				border-radius: 4px;
+				width: 100%;
+				&:hover, &:active, &:focus {
+					outline: none;
+					box-shadow: none;
+				}
+			}
+		}
+		.header__Dashboard--Options {
+			.list .link {
+				color: #97AED6;
+				margin: 0 10px;
+				span {
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+}

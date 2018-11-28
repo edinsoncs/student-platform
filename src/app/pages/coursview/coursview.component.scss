@@ -1,0 +1,392 @@
+.active {
+	.link {
+		color: #445c85!important;
+	}
+	.link:before {
+		opacity: 1!important;
+	}
+}
+
+.menu__Dashboard {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 18%;
+	background-color: #eff4f8;
+	box-shadow: inset -33px 0px 38px -21px #8989891c;
+	padding: 1em;
+	.menu__Dashboard--Nav {
+		.list {
+			display: block;
+			margin-bottom: 20px;
+			.link {
+				i {
+					margin-right: 5px;
+				}
+				text-decoration: none;
+				color: #97AED6;
+				padding: 10px;
+				display: flex;
+				align-items: center;
+				position: relative;
+				&:before {
+					content: '';
+					position: absolute;
+					width: 5px;
+					height: 100%;
+					background: #445c85;
+					right: -1em;
+					opacity: 0;
+				}
+			}
+			.link:hover {
+				color: #445c85;
+				i {
+					color: #445c85;
+				}
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.main__Dashboard {
+	background-color: #F8F9F9;
+	height: 100vh;
+	margin-left: 14.4em;
+	.main__Dashboard--Primary {
+		.main__Primary--Header {
+			.title {
+				font-size: 20px;
+				padding-bottom: 5px;
+			}
+		}
+	}
+
+	.main__Dashboard--Secondary {
+		.secondary__Post {
+			width: 65%;
+			.post {
+				background: white;
+				border: 1px solid #eee;
+				border-radius: 3px;
+				position: relative;
+				width: 45%;
+				.header__Post {
+					.title {
+						font-size: 17px;
+					}
+				}
+				.header__Image {
+					background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbloFna7PzUFeIQYslit7Ubh5gRYw7RD2DjNyahkwNfJs9U1_');
+					background-size:cover;
+					background-position:center;
+					height: 150px;
+				}
+			}
+		}
+
+		.secondary__Great {
+			width: 28%;
+			.great {
+				background-color: #111c45;
+				background-image: url('/assets/img/cup.png');
+				background-repeat: no-repeat;
+				background-size: 130px;
+				background-position: bottom;
+				height: 350px;
+				border-radius: 8px;
+				.great__Continue .link {
+					background: white;
+					color: #111c45;
+					padding: 4px 10px;
+					&:hover {
+						text-decoration: none;
+						background: transparent;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+
+.main__Dashboard--Video {
+	.video__Primary {
+		.video__Show {
+			width: 62%;
+		}
+	}
+}
+
+.video-player-container{
+	width: 100%;
+	height: 450px;
+	z-index: 2;
+}
+
+.video-container {
+	height: 450px;
+	background-color: black;
+}
+
+#media-video {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+
+
+.player-container {
+	height: 40px;
+	background-color: #f6f6f6;
+}
+
+.play-control, .volume-control {
+	width: 40px;
+	height: 40px;
+	display: table;
+	border-right: 1px solid #dddddd;
+	cursor: pointer;
+	float: left;
+}
+
+.play-button, .volume-button-mute {
+	vertical-align: middle;
+	text-align: center;
+	display: none;
+}
+
+.pause-button, .volume-button {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.play-control .fa {
+	font-size: 0.2em;
+}
+
+.volume-control .fa {
+	font-size: 0.8em;
+}
+
+.indicator {
+	width: 100px;
+	height: 40px;
+	border-right: 1px solid #dddddd;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+    text-align: center;
+    float: left;
+    line-height: 40px;
+}
+
+.progress {
+	width: 425px;
+	height: 40px;
+	float: left;
+}
+
+.progress-background {
+	position: absolute;
+    width: 385px;
+    height: 1px;
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.progress-over {
+	position: absolute;
+    width: 160px;
+    height: 1px;
+    background-color: #5e9f62;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.progress-hidden {
+	position: absolute;
+    width: 385px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.fullscreen-button {
+	width: 40px;
+	height: 40px;
+	float: right;
+	display: table;
+	cursor: pointer;
+}
+
+.fullscreen-button i {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border-left: 1px solid #dddddd;
+}
+
+
+
+
+.chat {
+  width: 320px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.chat-header {
+  background: #eff4f8;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  h1 {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+.chat-history {
+  height: 350px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  
+  img {
+    width: 36px;
+    border-radius: 50%;
+  }
+}
+
+.chat-item--me {
+  .message {
+    margin-left: 15px;
+    background: #f6f6f6;
+    
+    &::before {
+      right: 100%;
+      border: solid transparent;
+      border-right-color: #f6f6f6;
+      content: '';
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-width: 10px;
+      top: 10px;
+    }
+  }
+}
+
+.chat-item--other {
+  .message {
+    margin-right: 15px;
+    background: #f6f6f6;
+    
+    &::after {
+      left: 100%;
+      border: solid transparent;
+      border-left-color: #f6f6f6;
+      content: '';
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-width: 10px;
+      top: 10px;
+    }
+  }
+}
+
+.message {
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.message__user-name {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+}
+
+.message__time {
+  font-size: 11px;
+  color: #999;
+}
+
+.message__text {
+  font-size: 13px;
+  color: #777777;
+}
+
+.btns-row {
+  margin-top: 5px;
+}
+
+.chat-controls {
+  margin-top: 10px;
+  border-top: 1px solid #f6f6f6;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.chat-controls__textarea {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+}
+
+.chat-controls__btn {
+  padding: 0 15px;
+  background: #75b1e8;
+  line-height: 25px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.attach-file {
+  color: #999;
+  float: right;
+}
+
+// scroll
+// Let's get this party started
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+// Track
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, .3);
+}
+
+// Handle
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, .2);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, .3);
+}

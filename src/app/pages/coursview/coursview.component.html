@@ -1,0 +1,144 @@
+<header-static-dashboard>
+</header-static-dashboard>
+<section class="menu__Dashboard">
+	<figure class="menu__Dashboard--Figure text-center mb-5">
+		<h2 class="m-0">Student</h2>
+	</figure>
+	<nav class="menu__Dashboard--Nav">
+		<ul class="ul m-0 p-0">
+			<li class="list">
+				<a [routerLink]="'/dashboard'" class="link">
+					<i class="fas fa-home"></i>
+					Inicio
+				</a>
+			</li>
+			<li class="list active">
+				<a [routerLink]="'/dashboard/cours'" class="link">
+					<i class="fas fa-book"></i>
+					Cursos
+				</a>
+			</li>
+			<li class="list">
+				<a href="#" class="link">
+					<i class="fas fa-graduation-cap"></i>
+					Certificados
+				</a>
+			</li>
+			<li class="list">
+				<a href="#" class="link">
+					<i class="fas fa-edit"></i>
+					Exámenes
+				</a>
+			</li>
+			<li class="list">
+				<a href="#" class="link">
+					<i class="fas fa-edit"></i>
+					Configuración
+				</a>
+			</li>
+		</ul>
+	</nav>
+</section>
+<main class="main__Dashboard">
+	<section class="main__Dashboard--Primary p-4">
+		<div class="container">
+			<header class="main__Primary--Header">
+				<h2 class="title m-0 text-muted">
+				Curso A
+				</h2>
+				<p class="details small text-muted">Bienvenidos a este curso, es importante saber que esta informacion es de nuestra propiedad y autoria. descubre todo los modulos que tenemos disponibles para ti</p>
+			</header>
+		</div>
+	</section>
+	<section class="main__Dashboard--Video p-4">
+		<div class="container">
+			<div class="d-flex justify-content-between video__Primary">
+				<div class="video__Show">
+					<div class="video-player-container">
+						
+						<div class="video-container">
+							
+							<video id="media-video">
+								<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+								<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+							</video>
+						</div>
+						<div class="player-container">
+							
+							<div class="play-control">
+
+								<div class="play-button"><i class="fa fa-play"></i></div>
+								<div class="pause-button"><i class="fa fa-pause"></i></div>
+							</div>
+							<div class="volume-control">
+								
+								<div class="volume-button"><i class="fa fa-volume-up"></i></div>
+								<div class="volume-button-mute"><i class="fa fa-volume-off"></i></div>
+							</div>
+							<div class="indicator">0:00 / 0:00</div>
+							<div class="progress">
+								
+								<div class="progress-background"></div>
+								<div class="progress-over"></div>
+								<div class="progress-hidden"></div>
+							</div>
+							<div class="fullscreen-button"><i class="fa fa-arrows-alt"></i></div>
+						</div>
+					</div>
+					<div class="container-inner"></div>
+				</div>
+				<div class="chat__Show">
+					<div class="chat">
+						<div class="chat-header">
+							<p class="m-0">Comentarios</p>
+						</div>
+						<div class="chat-history">
+							<ul class="m-0 p-0">
+								<li class="chat-item chat-item--me">
+									<img src="https://semantic-ui.com/images/avatar2/small/lena.png" alt="" />
+									<div class="message">
+										<span class="message__user-name">Edinson c</span>
+										<time class="message__time">
+										<i class="fa fa-clock-o"></i>
+										12:30 am
+										</time>
+										<p class="message__text">¿Nos reunimos hoy? El proyecto ya se ha terminado y tengo resultados para mostrarle.</p>
+									</div>
+								</li>
+								<!-- <li class="chat-item chat-item--other">
+									<div class="message">
+										<span class="message__user-name">Bob Guardian</span>
+										<time class="message__time">
+										<i class="fa fa-clock-o"></i>
+										12:30 am
+										</time>
+										<p class="message__text">Are we meeting today? Project has been already finished and I have results to show you.</p>
+									</div>
+									<img src="https://semantic-ui.com/images/avatar2/small/eve.png" alt="" />
+								</li>
+								<li class="chat-item chat-item--me">
+									<img src="https://semantic-ui.com/images/avatar2/small/lena.png" alt="" />
+									<div class="message">
+										<span class="message__user-name">Bob Guardian</span>
+										<time class="message__time">
+										<i class="fa fa-clock-o"></i>
+										12:30 am
+										</time>
+										<p class="message__text">Are we meeting today? Project has been already finished and I have results to show you.</p>
+									</div>
+								</li>-->
+							</ul>
+						</div>
+						<div class="chat-controls">
+							<textarea class="chat-controls__textarea" rows="2" placeholder="Escribe tu comentario"></textarea>
+							<div class="btns-row">
+								<a href="#" class="chat-controls__btn">Enviar</a>
+								<a href="#" class="attach-file"><i class="fa fa-paperclip"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>

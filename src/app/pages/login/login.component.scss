@@ -1,0 +1,93 @@
+.register__Top {
+	background: -webkit-linear-gradient(0deg, #97AED6 0%, #CFDEF0 25%, #CFDEF0 100%)
+}
+.register__Main {
+	
+	.register__Main--Header {
+		.title {
+			font-size: 22px;
+			font-weight: 800;
+			color: #31487f
+		}
+	}
+
+	.register__Main--Container {
+		border: 2px solid #98ca3f;
+		.article__Register--Social {
+			width: 40%;
+			.register__Social--Header {
+				.title {
+					color: #97AED6;
+					font-size: 20px;
+				}
+			}
+			.register__Social--Link {
+				.list .link {
+					display: block;
+					padding: 15px;
+					margin: 0 0 10px 0;
+					color: white;
+					text-decoration: none;
+				}
+				.list .link.facebook {
+					background: linear-gradient(to left, #3b5999 0%, #3b5999 50%, #4e69a3 100%);
+					box-shadow: 0 1px 1px 0 #355089;
+					font-size: 18px;
+    				padding: 11px 0.8em 12px 0.8em;
+    				border-radius: 4px;
+				}
+				.list .link.twitter {
+					background: linear-gradient(to left, #60a9de 0%, #60a9de 50%, #6fb1e1 100%);
+					box-shadow: 0 1px 1px 0 #355089;
+					font-size: 18px;
+    				padding: 11px 0.8em 12px 0.8em;
+    				border-radius: 4px;
+				}
+				.list:last-child {
+					line-height: 16px;
+				}
+			}
+		}
+
+		.form__Register--Step {
+			width: 52%;
+			.form__Register--Header {
+				.title{
+					color: #97AED6;
+    				font-size: 20px;
+				}
+			}
+			label {
+				display: block;
+			}
+			input[type='text'], input[type='email'], input[type='password'] {
+				color: #1c3643;
+    			border: 1px solid #dbdbe2;
+    			border-radius: 5px;
+    			background-color: #f3f3f6;
+    			height: 36px;
+    			padding: 0.5em;
+    			width: 100%;
+    			&:active, &:hover, &:focus {
+    				box-shadow: none;
+    				outline: none;
+    			}
+			}
+			input[type='submit'] {
+				background: linear-gradient(to left, #95ca3e 0%, #95ca3e 50%, #85c638 100%);
+				font-size: 1rem;
+    			padding: 9px 0.8em 10px 0.8em;
+    			border: none!important;
+    			color: white;
+    			cursor: pointer;
+    			outline: none;
+    			border-radius: 4px;
+    			&:active, &:hover, &:focus {
+    				box-shadow: none;
+    				outline: none;
+    			}
+			}
+		}
+	}
+
+}
