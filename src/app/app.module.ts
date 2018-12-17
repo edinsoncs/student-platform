@@ -18,6 +18,12 @@ import { CoursViewComponent } from './pages/coursview/coursview.component';
 import { routing, appRoutingProviders } from './app.routing';
 
 
+//VIDEO
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatVideoModule } from 'mat-video';
+//VIDEO
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +41,9 @@ import { routing, appRoutingProviders } from './app.routing';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    routing
+    routing,
+    BrowserAnimationsModule,
+    MatVideoModule
   ],
   providers: [
   	appRoutingProviders

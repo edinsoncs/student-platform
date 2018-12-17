@@ -54,38 +54,12 @@
 		<div class="container">
 			<div class="d-flex justify-content-between video__Primary">
 				<div class="video__Show">
-					<div class="video-player-container">
-						
-						<div class="video-container">
-							
-							<video id="media-video">
-								<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-								<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
-							</video>
-						</div>
-						<div class="player-container">
-							
-							<div class="play-control">
 
-								<div class="play-button"><i class="fa fa-play"></i></div>
-								<div class="pause-button"><i class="fa fa-pause"></i></div>
-							</div>
-							<div class="volume-control">
-								
-								<div class="volume-button"><i class="fa fa-volume-up"></i></div>
-								<div class="volume-button-mute"><i class="fa fa-volume-off"></i></div>
-							</div>
-							<div class="indicator">0:00 / 0:00</div>
-							<div class="progress">
-								
-								<div class="progress-background"></div>
-								<div class="progress-over"></div>
-								<div class="progress-hidden"></div>
-							</div>
-							<div class="fullscreen-button"><i class="fa fa-arrows-alt"></i></div>
-						</div>
-					</div>
-					<div class="container-inner"></div>
+					<mat-video [autoplay]="false" [preload]="true" [fullscreen]="true" [download]="false" color="warn" spinner="dot" >
+				      <source matVideoSource src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+				      <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm">
+				    </mat-video>
+
 				</div>
 				<div class="chat__Show">
 					<div class="chat">
